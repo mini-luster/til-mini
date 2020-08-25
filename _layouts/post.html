@@ -2,35 +2,33 @@
 layout: default
 ---
 
-<!-- Project 상세 -->
-
-<div class="container margin-lr-auto margin-tb-auto">
-  <!--title-->
-  <div class="con-area-75">
-    <h2 class="">{{ page.title }}</h2>
-    <p class="project-date">
-      <time
-        datetime="{{ page.date | date_to_xmlschema }}"
-        itemprop="datePublished"
-        >{{ page.date | date_to_long_string }}</time
-      >
-    </p>
-  </div>
-  <!--paragraph(s)-->
-  {% for description in page.description %}
-  <div class="con-area-75">
-    <p class="">{{ description.paragraph }}</p>
-  </div>
-  {% endfor %}
-  <!--tags-->
-  <div class="margin-t-2 margin-b-2">
-    <span class="tag-color tag-font padding-tb-1 tag-margin-rl">
-      {% for tags in page.tags %} {% if forloop.last == true %} {{ tags.tag }}
-      {% else %} {{ tags.tag }} — {% endif %} {% endfor %}
-    </span>
-  </div>
-
-  <div class="margin-b-4 write-info">
-    {{ content }}
-  </div>
-</div>
+<section class="single-wrap">
+  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="feat">
+      <h5 class="page-date">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {{ page.date | date_to_long_string }}
+        </time>
+      </h5>
+    </div>
+    <h1 class="page-title" itemprop="name headline">{{ page.title }}</h1>
+    <div itemprop="articleBody">
+      {{ content }}
+    </div>
+    <div class="feat share">
+      <a href="http://twitter.com/share" class="popup">
+        <span class="icon-twitter"></span>
+      </a>
+    </div>
+    {% if page.next %}
+      <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" id="next">
+        <span class="nav-title nav-title-next">newer</span> &rarr;
+      </a>
+    {% endif %}
+    {% if page.previous %}
+      <a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}" id="prev">
+        &larr; <span class="nav-title nav-title-prev">older</span>
+      </a>
+    {% endif %}
+  </article>
+</section>
