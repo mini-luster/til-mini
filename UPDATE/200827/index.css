@@ -1,0 +1,73 @@
+.container {
+  position: relative;
+  width: 800px;
+}
+
+.backimage {
+  width: 100%;
+  height: inherit;
+}
+
+.contents {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 5px);
+  background-color: rgba(0, 0, 0, 0.56);
+  color: white;
+
+  /* 위치 */
+  display: flex;
+  /* flex-direction 기본적으로 가로로 설정됌 */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signiture {
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  border: 5px solid white;
+  padding: 15px 15px 5px 15px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.signiture__title {
+  width: 50%;
+}
+
+.signiture__origin {
+  display: flex;
+  align-items: flex-start;
+  font-size: 32px;
+  /* line-height: 20px; */
+  font-weight: 900;
+}
+
+.signiture__logo {
+  font-size: 16px;
+}
+
+.colorInfo {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.colorDraft {
+  width: 60px;
+  height: 60px;
+  background-color: tomato;
+}
+
+.backgroudTest {
+  width: 800px;
+  height: 120px;
+  background-image: url("assets/image/image_sky.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
