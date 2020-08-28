@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Gothic A1", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* 여기서부터복습! */
+
+.container_A {
+  position: relative;
+  width: 960px;
+}
+
+.background {
+  width: 100%;
+}
+
+.contents {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster__color_a {
+  width: 72px;
+  height: 72px;
+  background-color: #3f52f5;
+}
+
+.poster__color_b {
+  width: 72px;
+  height: 72px;
+  background-color: #d5a3fb;
+}
+
+.poster__color_c {
+  width: 72px;
+  height: 72px;
+  background-color: #9989fb;
+}
+
+.poster__color_d {
+  width: 72px;
+  height: 72px;
+  background-color: #95b9fb;
+}
+
+.poster__name_a {
+  font-size: 16px;
+  font-weight: 800;
+  display: flex;
+  align-items: flex-start;
+
+  margin: 8px 0;
+  letter-spacing: 1px;
+}
+
+.poster__name_b {
+  font-size: 12px;
+  font-weight: 800;
+
+  margin: 0 0 0 2px;
+}
+
+/* container_B */
+
+.container_B {
+  position: relative;
+  width: 960px;
+}
+
+.background_02 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contents_b {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.drow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: middle;
+  margin-top: 200px;
+}
+
+.drow__color_a {
+  width: 60px;
+  height: 60px;
+  background-color: #cbcbc9;
+}
+
+.drow__color_b {
+  width: 60px;
+  height: 60px;
+  background-color: #3b6151;
+}
+
+.drow__color_c {
+  width: 60px;
+  height: 60px;
+  background-color: #b38c56;
+}
+
+.drow__color_d {
+  width: 60px;
+  height: 60px;
+  background-color: #b54b3e;
+}
+
+.drow__color_e {
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+}
+
+.drow__name_a {
+  font-weight: 900;
+  margin-left: 6px;
+}
