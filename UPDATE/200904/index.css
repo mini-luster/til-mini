@@ -1,0 +1,132 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* 
+=================================
+BG : 레이아웃 
+=================================
+*/
+
+.background__layout {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: blanchedalmond;
+  display: flex;
+}
+
+/* 
+=================================
+BG : 배경 
+=================================
+*/
+
+.background__green {
+  flex: 1;
+  background-color: #2eac5b;
+}
+
+.background__blue {
+  flex: 1;
+  background-color: #446196;
+}
+
+/* 
+=================================
+MainGround : 레이아웃 
+=================================
+*/
+
+.main__layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* 
+=================================
+포켓몬 도감 : 컨테이너 
+=================================
+*/
+.pokemon__container {
+  width: 316px;
+  height: 628px;
+  background-color: rgba(44, 63, 98, 0.5);
+  margin-top: 40px;
+}
+
+.pokemon__info {
+  width: 100%;
+  height: calc(100% - 8px);
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+.pokemonProfile {
+  width: 100%;
+  /* width: 300px; */
+  /* height: 320px; */
+  overflow: hidden;
+  cursor: pointer;
+  transition: 200ms all ease-in-out;
+}
+
+.pokemonProfile:hover {
+  transform: scale(1.35);
+}
+
+.pokemon__wrapper {
+  display: inline-block;
+  overflow: hidden;
+  max-height: 315px;
+}
+
+.pokemon__name {
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* .pokemon__container::after {
+  height: 8px;
+  background-color: rgba(44, 63, 98, 0.5);
+} */
+/* 
+=================================
+이상해씨 
+=================================
+*/
+
+/* 
+=================================
+파이리
+=================================
+*/
+.charmander__layout {
+  width: 638px;
+  height: 800px;
+  background-color: rgba(44, 63, 98, 0.5);
+  /* 패딩을 포함해서 영역을 계산해준다 */
+  box-sizing: border-box;
+  padding: 0 8px 16px;
+  margin: 0 32px;
+}
+
+.charmander__bakcgroud {
+  width: 100%;
+  height: 100%;
+  background-color: #fb6a20;
+  display: flex;
+  justify-content: center;
+}
+/* 
+=================================
+꼬부기 
+=================================
+*/
