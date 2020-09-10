@@ -1,0 +1,218 @@
+/* 
+=================================
+셋팅이다! 
+=================================
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap");
+
+body {
+  font-family: "Nanum Gothic Coding", monospace;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h4 {
+  margin: 12px;
+}
+/* 
+=================================
+BG 01 : 레이아웃 
+=================================
+ */
+
+.background__layout {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rosybrown; */
+  display: flex;
+}
+
+/*  
+=================================
+BG 02 : 분할 
+=================================
+*/
+
+.background__green {
+  flex: 1;
+  background-color: #6ac212;
+}
+
+.background__orange {
+  flex: 1;
+  background-color: #ff5c29;
+}
+
+.background__blue {
+  flex: 1;
+  background-color: #596aff;
+}
+
+.card__sort {
+  display: flex;
+  justify-content: center;
+}
+
+/*  
+=================================
+MAIN 01 : 카드들을 배경위로 올리자
+=================================
+*/
+
+.main__layout {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*  
+=================================
+CARD : 공통
+=================================
+*/
+
+.card__area {
+  margin-top: 200px;
+  width: 420px;
+  height: 680px;
+  background-color: white;
+}
+
+.pokemon__info {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.pokemon__wrapper {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: teal;
+}
+.profile__img {
+  width: 400px;
+  height: 400px;
+  cursor: pointer;
+  transition: 200ms all ease-in-out;
+}
+
+.profile__img:hover {
+  transform: scale(1.25) rotate(42deg);
+}
+
+.porfile__info {
+  font-size: 42px;
+  margin-top: 32px;
+  /* line-height: 0px; */
+  /* line-height: 24px; */
+  display: flex;
+  justify-content: center;
+}
+
+/*  
+=================================
+CARD  : 이상해씨
+=================================
+*/
+
+.contens__area {
+  width: 304px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.icon__status {
+  top: 24px;
+  width: 72px;
+  cursor: pointer;
+}
+
+/*  
+=================================
+CARD  : 파이리
+=================================
+*/
+
+.container {
+  width: 304px;
+  height: 1px;
+  margin: auto;
+}
+.info__data {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*  
+=================================
+CARD  : 꼬부기
+=================================
+*/
+.info__anim {
+  width: 390px;
+  overflow: hidden;
+}
+
+.move {
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 200%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: -200%;
+    width: 100%;
+  }
+}
+
+/* =================================
+Notification : 메티몽 
+=================================
+ */
+
+.Notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Notification__area {
+  /* vertical-align: middle; */
+  width: 960px;
+  height: 120px;
+  border-radius: 12px;
+  top: 54px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  position: absolute;
+  /*  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.metamong {
+  width: 62px;
+  margin: 0px 20px 0px 0px;
+  cursor: pointer;
+  transition: 200ms all ease-in-out;
+}
+
+.metamong:hover {
+  transform: scale(1.25) rotate(42deg);
+}
