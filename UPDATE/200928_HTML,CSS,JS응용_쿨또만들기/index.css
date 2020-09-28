@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited,
+a:active {
+  color: initial;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.lotto__intro {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2a2a2e;
+}
+
+.lotto__header {
+  height: 100px;
+  margin: 0 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lotto__header a {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.lotto__contents {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lotto__title {
+  font-size: 48px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.lotto__title.last {
+  margin-top: 10px;
+}
+
+.lotto__ball__collection {
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.lotto__ball__collection.main {
+  margin-top: 0;
+}
+
+.lotto_ball {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-right: 22px;
+  color: #ffffff;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.lotto_ball.last {
+  margin-right: 0;
+}
+
+.lotto_ball.red {
+  background-color: #eb5757;
+}
+
+.lotto_ball.violet {
+  background-color: #9b51e0;
+}
+
+.lotto_ball.blue {
+  background-color: #2f80ed;
+}
+
+.lotto_ball.green {
+  background-color: #219653;
+}
+
+.lotto_ball.orange {
+  background-color: #f2994a;
+}
+
+.lotto_ball.yellow {
+  background-color: #f2c94c;
+}
+
+.lotto__foreground__image {
+  position: absolute;
+  height: min-content;
+  bottom: -5px;
+  overflow: hidden;
+}
+
+.lotto__foreground__wrapper {
+  position: relative;
+}
+
+.lotto__foreground__wrapper img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.lotto__foreground__wrapper img.blur {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  filter: blur(15px);
+  -webkit-filter: blur(15px);
+}
+
+.lotto__blackLayer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+}
+
+.lotto__foreground__image button {
+  position: absolute;
+  bottom: 42px;
+  right: 260px;
+  width: 257px;
+  height: 100px;
+  background-color: #2a2a2e;
+  border-radius: 16px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* ============================ */
+
+.lotto__main {
+  display: none;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2a2a2e;
+  color: white;
+}
+
+.lotto__goodluck {
+  margin-top: 128px;
+}
