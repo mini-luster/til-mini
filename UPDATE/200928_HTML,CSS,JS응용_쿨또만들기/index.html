@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" type="text/css" />
+    <title>로또 추첨기</title>
+  </head>
+  <body>
+    <main class="lotto__intro">
+      <!-- HEADER : 로또 추첨기 헤더 -->
+      <header class="lotto__header">
+        <a href="index.html">
+          <img src="./assets/images/im-lotto-logo.svg" alt="COOLTTO" />
+        </a>
+        <a
+          href="https://minheeyoon.github.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div>반의 블로그</div>
+        </a>
+      </header>
+
+      <!-- CONTENT : 로또 추첨기 컨텐츠 -->
+      <section class="lotto__contents">
+        <div class="lotto__title">
+          <div>조금 더 멋진 로또 추첨기, 쿨또</div>
+          <div class="last">버튼을 눌러 번호를 뽑아보세요.</div>
+        </div>
+
+        <div class="lotto__ball__collection">
+          <div class="lotto_ball red">NN</div>
+          <div class="lotto_ball violet">NN</div>
+          <div class="lotto_ball blue">NN</div>
+          <div class="lotto_ball green">NN</div>
+          <div class="lotto_ball orange">NN</div>
+          <div class="lotto_ball yellow last">NN</div>
+        </div>
+      </section>
+
+      <section class="lotto__foreground__image">
+        <div class="lotto__foreground__wrapper">
+          <img
+            src="./assets/images/im-lotto-foreground-banner.png"
+            alt="쿨또를 즐겨주세요"
+          />
+          <button class="lotto__numberGenerate">번호뽑기</button>
+        </div>
+      </section>
+    </main>
+
+    <main class="lotto__main">
+      <!-- HEADER : 로또 추첨기 헤더 -->
+      <header class="lotto__header">
+        <a href="index.html">
+          <img src="./assets/images/im-lotto-logo.svg" alt="COOLTTO" />
+        </a>
+        <a
+          href="https://minheeyoon.github.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div>반의 블로그</div>
+        </a>
+      </header>
+
+      <section class="lotto__contents">
+        <div class="lotto__ball__collection main">
+          <div class="lotto_ball red main">NN</div>
+          <div class="lotto_ball violet main">NN</div>
+          <div class="lotto_ball blue main">NN</div>
+          <div class="lotto_ball green main">NN</div>
+          <div class="lotto_ball orange main">NN</div>
+          <div class="lotto_ball yellow last main">NN</div>
+        </div>
+
+        <div class="lotto__foreground__image">
+          <div class="lotto__foreground__wrapper">
+            <img
+              class="blur"
+              src="./assets/images/im-lotto-foreground-banner.png"
+              alt="쿨또를 즐겨주세요"
+            />
+            <div class="lotto__blackLayer">행운을 빌게요.👍</div>
+            <button class="lotto__gameAgain">다시하기</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./lottery.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
