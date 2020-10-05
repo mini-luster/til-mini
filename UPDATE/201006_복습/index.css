@@ -1,0 +1,172 @@
+/* 
+==========================================
+START : 기본셋팅
+==========================================
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  /* font-style: none; */
+}
+
+a:visited,
+a:active {
+  color: white;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+==========================================
+START : 기본셋팅
+==========================================
+*/
+.cooltto__intro {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.cooltto__right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(./assets/img/bakcground_img.png);
+}
+
+.cooltto__left {
+  flex: 1;
+  background-color: #232325;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+/* 
+==========================================
+HEADER : 쿨또 로고
+==========================================
+*/
+.cooltto__header {
+  width: 698px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cooltto__logo {
+  width: 120px;
+  top: 0;
+}
+
+/* 
+==========================================
+CONTENTS Right Contents  : 번호뽑기 
+==========================================
+*/
+
+.contents__Rwrap {
+  width: 698px;
+  height: 578px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contents__Rwrap h3 {
+  margin-bottom: 40px;
+  color: white;
+  font-size: 32px;
+}
+
+.cooltto__numberBtn {
+  width: 420px;
+  height: 62px;
+  background-color: #201d1d;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cooltto__numberBtn:hover {
+  background-color: #0057ff;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+/* 
+==========================================
+CONTENTS Left Contents : 번호출력
+==========================================
+*/
+
+.contents__Lwrap {
+  width: 698px;
+  height: 578px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: lavenderblush; */
+}
+
+.contents__Lwrap h3 {
+  margin-bottom: 40px;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.cooltto__numberWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.cooltto__num {
+  width: 230px;
+  height: 230px;
+  margin: 2px;
+  background-color: #303034;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: white;
+  font-weight: 800;
+}
+
+.cooltto__footer {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.2;
+}
