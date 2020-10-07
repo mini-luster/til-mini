@@ -32,7 +32,7 @@ document.querySelector(".day__mode").addEventListener("click", () => {
 //=============================================
 document.querySelector(".submission").addEventListener("click", () => {
   answer = prompt("ALL IN US!");
-  rightAnswer = "있지";
+  rightAnswer = "있지" || "ITZY" || "itzy" || "잇지";
   if (answer === rightAnswer) {
     document.write("참잘했어요");
   } else {
