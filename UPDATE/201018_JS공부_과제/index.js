@@ -57,9 +57,9 @@ let student = [
 
 // 👉 숙제 1 --------------------------------------
 function getAverage(student){
-  // let getAverage = student.name + "의 평균은 : " + (student.maths + student.english + student.society + student.science + student.korean ) / 5;
+  let getAverage = student.name + "의 평균은 : " + (student.maths + student.english + student.society + student.science + student.korean ) / 5;
   // 템플릿 리터럴
-  let getAverage = `${student.name}의 평균은 ${(student.maths + student.english + student.society + student.science + student.korean ) / 5}`;
+  // let getAverage = `${student.name}의 평균은 ${(student.maths + student.english + student.society + student.science + student.korean ) / 5}`;
 
   console.log(getAverage);
 
