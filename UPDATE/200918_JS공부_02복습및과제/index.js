@@ -19,7 +19,7 @@ function gogodanTable(number) {
 
   for( var item = 1;times < 10; times++ ) {
       var anwer = number * times;
-      text + = number + "x" + times + "=" + answer + "<br/>";
+      text += number + "x" + times + "=" + answer + "<br/>";
   }
 
   return text;

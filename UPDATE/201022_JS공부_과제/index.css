@@ -1,0 +1,89 @@
+/* 
+======================================
+START : 기본셋팅
+======================================
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  padding: 8px;
+  border: none;
+  background-color: white;
+  height: 50px;
+  width: 420px;
+  border-radius: 0px 0px 0px 8px;
+}
+
+input[type="submit"] {
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  background-color: #3172ff;
+  height: 66px;
+  width: 120px;
+  border-radius: 0px 8px 8px 0px;
+}
+
+input[type="submit"]:hover {
+  outline: none;
+  background-color: #0050ff;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+  background-color: #0050ff;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  background-color: #efefef;
+}
+/* 
+======================================
+Conentents :  
+======================================
+*/
+
+.title {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.style__input {
+  font-size: 24px;
+}
+
+.style__input__btn {
+  font-size: 18px;
+  color: white;
+}

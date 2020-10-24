@@ -1,13 +1,8 @@
-document.write("test")
 
-const students = [
-    {
-      name : "코난",
-      grade: [
-        {subject: 'maths', score:92},
-        {subject: 'english', score:92},
-        {subject: 'society', score:78},
-        {subject: 'science', score:72},
-        {subject: 'korean', score:88}
-      ]
-    }, ]
+
+
+for (let i = 1; i<=9; i++) {
+    console.log(2 + "x" + i + "=" + 2*i )
+};
+
+
