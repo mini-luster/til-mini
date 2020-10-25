@@ -1,0 +1,20 @@
+<script type="text/javascript">
+	function guguResult() {
+		var guguInput = document.getElementById('input').value;
+		var temp = "";
+		var result = "";
+		for (i = 0; i < 10; i++) {
+			result = guguInput * i;
+			temp += guguInput + "X" + i + "=" + result + "<br/>";
+		}
+		document.getElementById('guguStart').innerHTML = temp;
+	}
+</script>
+
+	<h1>구구단's</h1>
+	<h3>숫자를 입력해주세요.</h3>
+
+	<input type="text" id="input">
+	<button onclick="guguResult()">조회</button>
+
+	<p id="guguStart"></p>
