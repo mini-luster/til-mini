@@ -51,7 +51,7 @@ window.addEventListener("load", function(){
                document.write("어허, 구구단이니까 10아래 숫자로만 해주라")
            } else {
                  for (let i = 1; i<=9; i++) {
-                    document.write( numeric + "x" + i + "=" + numeric * i + "//" )
+                    document.write( numeric + "x" + i + "=" + numeric * i + '<br>' )
                 };
            }
 

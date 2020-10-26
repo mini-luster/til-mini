@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 	function guguResult() {
 		var guguInput = document.getElementById('input').value;
 		var temp = "";
@@ -17,4 +17,48 @@
 	<input type="text" id="input">
 	<button onclick="guguResult()">조회</button>
 
-	<p id="guguStart"></p>
+	<p id="guguStart"></p> -->
+
+
+	<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>이든의 숙제</title>
+</head>
+<body>
+    <div id="contents">
+        <h1>어서오세요. 구구단입니다.</h1>
+        <p>알고 싶은 구구단의 숫자 혹은 'n단'를 입력하세요.</p>
+        <p>2단에서 9단까지만 알려드릴 수 있어요.</p>
+
+        <input type="text" id="inputNumber"/>
+        <button onclick="showMultable()">계산하기</button>
+
+        <div id="showResult"></div>
+    </div>
+    
+    <script>
+        function showMultable() {
+            const inputNumber = document.querySelector('#inputNumber').value; // 입력한 값
+            function foundNumber(inputNumber) {
+                let returnNumber = inputNumber.replace(/[^0-9]/g,'');
+                return Number(returnNumber);
+            };
+            const extractedNumber = foundNumber(inputNumber);
+            
+            if (!extractedNumber) {
+                alert("숫자 혹은 'n단'을 입력하세요");
+            } else if (extractedNumber < 2 || extractedNumber > 9) {
+                alert('2에서 9까지의 숫자만 알려줄수 있어요... 미안해요..');
+            } else {
+                for (let i = 1; i <= 9; i++) {
+                    document.querySelector('#showResult').innerHTML += extractedNumber + " X " + i + " = " + extractedNumber * i + '<br>';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
