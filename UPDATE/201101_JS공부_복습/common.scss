@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+// =====================================
+// color
+// =====================================
+
+$vanBlack: #18191c;
+$vanWhite: #f1f1f1;
+
+$grey-80: #212225;
+$grey-50: #adadad;
+
+$vanBlue: #0050ff;
+
+// =====================================
+// font : 오픈산스
+// =====================================
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap");
+
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap");
+}
+
+$font-family: "Open Sans", sans-serif;
+$title-weight: 800;
+$title-font: 32px;
+
+$input-font: 16px;
+
+// =====================================
+// =====================================
+@import "layout";

@@ -1,0 +1,118 @@
+// =====================================
+// 스타일 리셋
+// =====================================
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+// =====================================
+// 폰트
+// =====================================
+
+body {
+  font-family: $font-family;
+  background-color: $vanBlack;
+  display: flex;
+  justify-content: center;
+}
+
+// =====================================
+// layout
+// <div class="gugudan__area">
+// <section class="Question">
+// <section class="Answer">
+// =====================================
+
+.gugudan__area {
+  width: 800px;
+  height: 100vh;
+  margin: 24px;
+}
+
+.Question {
+  margin-top: 10%;
+  width: 100%;
+}
+
+.Answer {
+  background-color: $grey-80;
+  width: 100%;
+  height: 60%;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// =====================================
+// input
+// =====================================
+
+h1 {
+  font-size: $title-font;
+  font-weight: $title-weight;
+  margin-bottom: 16px;
+  color: $vanWhite;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+input[type="text"] {
+  font-size: $input-font;
+  width: 80%;
+  height: 60px;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: 20%;
+  height: 60px;
+  border-radius: 4px;
+  background-color: $vanBlue;
+  margin-left: 8px;
+  color: $vanWhite;
+}
+
+// =====================================
+// contenst: <div class="contnets__answer">
+// =====================================
+
+.contnets__answer {
+  width: 92%;
+  height: 92%;
+  font-weight: $title-weight;
+  color: $vanWhite;
+}
