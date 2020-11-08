@@ -83,6 +83,7 @@ CARD : 공통
   width: 420px;
   height: 680px;
   background-color: white;
+  position: relative;
 }
 
 .pokemon__info {
@@ -124,10 +125,12 @@ CARD  : 이상해씨
 */
 
 .contens__area {
+  /* REVIEW: Responsive하게 작업을 한다면 어떻게 해야할까? */
   width: 304px;
   height: 150px;
   display: flex;
   justify-content: space-between;
+  /* REVIEW: margin에 auto를 주면 어떤일이 일어날까? */
   margin: auto;
 }
 
@@ -144,13 +147,23 @@ CARD  : 파이리
 */
 
 .container {
-  width: 304px;
-  height: 1px;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: calc(100% - 24px);
+  bottom: 20px;
 }
+
 .info__data {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+}
+
+.info__data1 {
+  display: flex;
 }
 
 /*  
